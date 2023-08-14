@@ -34,7 +34,7 @@ defaults
         errorfile 504 /etc/haproxy/errors/504.http
 
 frontend teniola-frontend
-        bind *:80 ssl crt /etc/letsencrypt/live/www.teniola.tech/www.teniola.tech.pem
+        bind *:443 ssl crt /etc/letsencrypt/live/www.teniola.tech/www.teniola.tech.pem
         mode http
         default_backend teniola-backend
 backend teniola-backend
